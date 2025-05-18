@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREADOR DE CONTRASEÑAS</title>
+    <script src="iteracion.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images.png">
+</head>
+
+<body>
+    <div class="afuera">
+
+        <h1>GENERADOR DE CONTRASEÑAS</h1>
+
+        <div class="dentro">
+            <label>Longitud:
+                <input type="number" id="largo" min="4" max="32" value="12">
+            </label>
+            <label>Mayúsculas
+                <input type="checkbox" id="mayus" class="checkbox" checked>
+            </label>
+            <label>Minúsculas
+                <input type="checkbox" id="minus" class="checkbox" checked>
+            </label>
+            <label>Números
+                <input type="checkbox" id="num" class="checkbox" checked>
+            </label>
+            <label>Símbolos
+                <input type="checkbox" id="simbolo" class="checkbox">
+            </label>
+        </div>
+
+        <button id="generar" onclick= "contra_crear()"> Generar </button>
+
+        <p id="resultado"></p>
+
+        <button id="copiar" onclick= "copiar()" > Copiar </button>
+    </div>
+    
+
+</body>
+
+</html>
