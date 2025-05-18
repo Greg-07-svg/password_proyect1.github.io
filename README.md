@@ -1,1 +1,2 @@
-this is my first web proyect. 
+- this is my first interative web page.
+- done for the class "laboratorio de computacion" at UCC.
