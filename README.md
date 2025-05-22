@@ -1,2 +1,3 @@
-- this is my first interative web page.
+- this is our first interative web page.
 - done for the class "laboratorio de computacion" at UCC.
+- made by Gonzalo Marin, Gregorio Miranda.
