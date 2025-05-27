@@ -35,7 +35,23 @@ body{
     background-color: #1e1e3f;
     color: azure;
     text-align: center;
+} 
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  appearance: none; /* Quita el estilo del navegador */
+  border: 2px solid #333;
+  border-radius: 4px; /* Bordes redondeados opcionales */
+  background-color: white;
+  cursor: pointer;
+  display: inline-block;
 }
+
+input[type="checkbox"]:checked {
+  background-color: #333; /* Cambia el fondo cuando está seleccionado */
+}
+
 
 p{
     color:#616732;
