@@ -40,16 +40,16 @@ body{
 input[type="checkbox"] {
   width: 20px;
   height: 20px;
-  appearance: none; /* Quita el estilo del navegador */
+  appearance: none; 
   border: 2px solid #333;
-  border-radius: 4px; /* Bordes redondeados opcionales */
+  border-radius: 4px; 
   background-color: white;
   cursor: pointer;
   display: inline-block;
 }
 
 input[type="checkbox"]:checked {
-  background-color: #333; /* Cambia el fondo cuando está seleccionado */
+  background-color: #15053b; 
 }
 
 
