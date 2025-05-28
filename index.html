@@ -32,14 +32,22 @@
                 <input type="checkbox" id="simbolo" class="checkbox">
             </label>
         </div>
-
+        
         <button id="generar" onclick= "contra_crear()"> Generar </button>
-
+        <button id="copiar" onclick= "copiar()" > Copiar </button>
         <p id="resultado"></p>
 
-        <button id="copiar" onclick= "copiar()" > Copiar </button>
+    
+        <button id="ver_historial" onclick="hisHistorial()"> Ver Historial </button>
+        <button id="borrar_historial" onclick= "borrar_historial()"> Borrar Historial </button>
+
+        
     </div>
     
+    <div id="historial-container" style="display:none;">
+        <h2>Historial</h2>
+        <ul id="historial"></ul>
+    </div>
 
 </body>
 

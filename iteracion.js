@@ -19,13 +19,18 @@ function contra_crear(){
         return "";
     }
 
-    const largo_1 = parseInt(document.getElementById("largo").value) || 8;
+    const largo_1 = parseInt(document.getElementById("largo").value);
     let contraseña = '';
     for (let i = 0; i < largo_1; i++) {
         contraseña += caracteres[Math.floor(Math.random() * caracteres.length)]; //pickear de a un caracter
     } 
     
     document.getElementById("resultado").textContent = contraseña;
+
+    const historial = document.getElementById("historial");
+    const li = document.createElement("li");
+    li.textContent = "Contraseña: " + contraseña;
+    historial.appendChild(li);
 }
 
 
@@ -40,6 +45,15 @@ function copiar(){
     .then(() => {
       alert("¡Contraseña copiada al portapapeles!");
     })
+}
+
+function hisHistorial() {
+    const cont = document.getElementById("historial-container");
+    cont.style.display = (cont.style.display === "none" || cont.style.display === "") ? "block" : "none";
+}
+
+function borrar_historial() {
+    document.getElementById("historial").innerHTML = "";
 }
 
 

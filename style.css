@@ -3,12 +3,14 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: #636363 ;
-    background-color: #0a0a23;
+    background-image: url('images.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: fantasy;
     color: #a2ab58;
     margin: 0;
-    height: 700PX;
+    height: 700px;
 }
 
 .afuera{
@@ -35,23 +37,7 @@ body{
     background-color: #1e1e3f;
     color: azure;
     text-align: center;
-} 
-
-input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-  appearance: none; 
-  border: 2px solid #333;
-  border-radius: 4px; 
-  background-color: white;
-  cursor: pointer;
-  display: inline-block;
 }
-
-input[type="checkbox"]:checked {
-  background-color: #15053b; 
-}
-
 
 p{
     color:#616732;
@@ -67,5 +53,30 @@ button{
 }
 
 button:hover{
-    background-color: #a2ab58;
+    background-color: #e2e6cc;
+}
+
+#historial-container {
+    position: fixed;
+    top: 150px;
+    right: 30px;
+    width: 250px;
+    background: #d2eef9;
+    border: 10px solid #136185;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(228, 219, 219, 0.1);
+    z-index: 100;
+}
+#historial-container h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+#historial {
+    list-style: none;
+    padding-left: 0;
+    word-break: break-all;
+}
+#historial li {
+    margin-bottom: 9px; 
 }
