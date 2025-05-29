@@ -6,7 +6,7 @@ body {
   font-family: fantasy;
   color: #a2ab58;
   margin: 0;
-  height: 700px;
+  height: 600px;
 }
 
 header {
@@ -37,7 +37,7 @@ nav a:hover {
 }
 
 main {
-  margin-top: 170px; 
+  margin-top: 200px; 
   padding: 20px;
 }
 
