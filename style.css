@@ -1,82 +1,110 @@
-
-body{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('images.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: fantasy;
-    color: #a2ab58;
-    margin: 0;
-    height: 700px;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: fantasy;
+  color: #a2ab58;
+  margin: 0;
+  height: 700px;
 }
 
-.afuera{
-    text-align: center;
-    padding: 20px;
-    font-size: 30px;
-    background-color: #1e1e3f ;
-    border-radius: 30px;
-    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+.afuera {
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  background-color: #1e1e3f;
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+.checkbox {
+  display: none;
+}
+
+/* Estilo del label para actuar como checkbox */
+label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.checkbox-label {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Mostrar el tilde cuando el checkbox está marcado */
+.checkbox:checked + .checkbox-label::after {
+  content: "✔";
+  color: #333;
 }
 
 .dentro {
   margin: 10px;
+  margin-left: 275px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-
-#largo{
-    height: 14px;
-    display: inline-block;
-    vertical-align: middle;
-    background-color: #1e1e3f;
-    color: azure;
-    text-align: center;
+#largo {
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #1e1e3f;
+  color: azure;
+  text-align: center;
 }
 
-p{
-    color:#616732;
+p {
+  color: #616732;
 }
 
-button{
-    font-size: 20px;
-    font-family: fantasy;
-    color: #7c8441;
-    border-radius: 30px;
-    background-color: #1e1e3f;
-    
+button {
+  font-size: 20px;
+  font-family: fantasy;
+  color: #7c8441;
+  border-radius: 30px;
+  background-color: #1e1e3f;
 }
 
-button:hover{
-    background-color: #e2e6cc;
+button:hover {
+  background-color: #e2e6cc;
 }
 
 #historial-container {
-    position: fixed;
-    top: 150px;
-    right: 30px;
-    width: 250px;
-    background: #d2eef9;
-    border: 10px solid #136185;
-    padding: 16px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(228, 219, 219, 0.1);
-    z-index: 100;
+  position: fixed;
+  top: 150px;
+  right: 30px;
+  width: 250px;
+  background: #d2eef9;
+  border: 10px solid #136185;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(228, 219, 219, 0.1);
+  z-index: 100;
 }
 #historial-container h2 {
-    margin-top: 0;
-    font-size: 1.2em;
+  margin-top: 0;
+  font-size: 1.2em;
 }
 #historial {
-    list-style: none;
-    padding-left: 0;
-    word-break: break-all;
+  list-style: none;
+  padding-left: 0;
+  word-break: break-all;
 }
 #historial li {
-    margin-bottom: 9px; 
+  margin-bottom: 9px;
 }
